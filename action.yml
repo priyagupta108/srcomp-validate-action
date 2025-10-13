@@ -20,7 +20,7 @@ runs:
     - name: Install Dependencies
       shell: bash
       # run: pip install -r ${{ github.action_path }}/requirements.txt
-      run: requirements.txt
+      run: pip install -r requirements.txt
 
     - name: Python Version
       shell: bash
