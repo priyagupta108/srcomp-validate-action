@@ -13,8 +13,8 @@ runs:
         
         cache-dependency-path: |
           ${{ github.action_path }}/subdirectory/requirements-dev.txt
-          ${{ github.action_path }}/**/requirements.txt    
-          ${{ github.action_path }}/**/requirements-test.txt
+          ${{ github.action_path }}/requirements.txt    
+          ${{ github.action_path }}/requirements-test.txt
 
     
     - name: Install Dependencies
@@ -22,8 +22,8 @@ runs:
       # run: pip install -r ${{ github.action_path }}/subdirectory/requirements-dev.txt
       run: |
           pip install -r ${{ github.action_path }}/subdirectory/requirements-dev.txt
-          pip install -r ${{ github.action_path }}/**/requirements.txt
-          pip install -r ${{ github.action_path }}/**/requirements-test.txt
+          pip install -r ${{ github.action_path }}/requirements.txt
+          pip install -r ${{ github.action_path }}/requirements-test.txt
     - name: Python Version
       shell: bash
       run: python --version
