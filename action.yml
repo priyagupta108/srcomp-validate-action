@@ -4,8 +4,8 @@ runs:
   using: composite
   steps:
     - name: Set up Python
-      uses: priyagupta108/setup-python@test-hashFiles
-      # uses: actions/setup-python@v6
+      # uses: priyagupta108/setup-python@test-hashFiles
+      uses: actions/setup-python@v6
       with:
         python-version: '3.10'
         cache: pip
