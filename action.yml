@@ -13,9 +13,9 @@ runs:
         
         cache-dependency-path: |
           ${{ github.action_path }}/**/requirements-test.txt
-          ${{ github.action_path }}/**/requirements-dev.txt
-          ${{ github.action_path }}/**/requirements.txt
-          ${{ github.action_path }}/**/setup.cfg
+          # ${{ github.action_path }}/**/requirements-dev.txt
+          # ${{ github.action_path }}/**/requirements.txt
+          # ${{ github.action_path }}/**/setup.cfg
 
     
     - name: Install Dependencies
