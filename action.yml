@@ -3,6 +3,10 @@ description: A GitHub Action to validate a compstate.
 runs:
   using: composite
   steps:
+    - name: Set up go
+      uses: actions/setup-go@v7
+      with:
+         go-version: '1.21.0'
     - name: Set up Python
       uses: priyagupta108/setup-python@test-hashFiles
       # uses: actions/setup-python@v6
